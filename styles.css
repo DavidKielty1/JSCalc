@@ -7,6 +7,13 @@ body {
   display: table;
   justify-content: center;
   align-items: center;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
 }
 
 #calc-parent {
@@ -66,7 +73,7 @@ body {
   overflow: hidden;
   white-space: nowrap;
   padding: 12px;
-  border-radius: 2px 2px 0 0;
+  border-radius: 7px 7px 0 0;
 }
 
 .calc-btn-operator {
@@ -79,4 +86,14 @@ h2 {
   margin-top: 50px;
 }
 
-calc
+#calc-equals {
+  border-radius: 0 0 7px 0;
+}
+
+#calc-zero {
+  border-bottom-left-radius: 7px;
+}
+
+#calc-parent {
+  margin-left: calc(50% - 100px);
+}
